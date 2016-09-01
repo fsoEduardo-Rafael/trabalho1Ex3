@@ -20,14 +20,14 @@ fflush(stdin);
 
 	printf("\nSegue a string s1: %s\n", s1);
 
-	for(i=0 ; i<strlen(s1) ; i++){
+	for(i=0 ; i<=strlen(s1) ; i++){
 		s2[i] = s1[i];
 	}
 	printf ("Segue s2: %s\n", s2);
 
 	printf("Concatenando as duas strings: %s\n", strcat(s1,s2));
-	printf("Não pode dar nenhum erro de execução, as duas strings já existem\n");
-	printf("O comprimento da string s1 e: %zu", strlen(s1));
+	printf("Pode, se não distribuir corretamente os caracteres no vetor com a string.\n");
+	printf("O comprimento da string s1 e: %zu\n", strlen(s1));
 	return 0;
 }
 
